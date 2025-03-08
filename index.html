@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"  />
+</head>
+<body>
+   <!-- nav start -->
+   <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+   <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+      <li class="nav-list">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-list">
+        <a href="Register.html" class="nav-link">Register</a>
+      </li>
+      <li class="nav-list">
+        <a href="Login.html" class="nav-link">Login</a>
+      </li>
+
+      <li class="nav-list">
+        <a href="Login.html" class="nav-link">Logout</a>
+      </li>
+      <li class="nav-list">
+        <a href="contact.html" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-list">
+        <a href="profile.html" class="nav-link"><img src="image/Arman.jpg" class="Arman" alt="profile"></a>
+      </li>
+    </ul>
+    <ul class="nav-lower flex-space-around">
+      <li class="nav-list">
+        <a href="index.html" class="nav-link nav-brand">ARMAN ARFAT</a>
+      </li>
+      <li class="nav-list">
+        <a href="card.html" class="nav-link">
+          <span><i class="fa-solid fa-cart-shopping"></i>
+          cart 2 product-$124.40</span>
+        </a>
+      </li>
+    </ul>
+   </nav>
+   <!-- nav end -->
+    <!-- header start -->
+    <header class="header">
+      <div class="banner flex-space-around">
+         <marquee behavior="" direction="" class="banner-title">50% Sales going on</marquee>
+         <div class="featurs flex-space-around">
+          <article class="feature flex-center">
+  <i class="fa-solid fa-truck-fast feature-icon feature-icon"></i>
+  <h3>Shipping within 7 days</h3>
+          </article>
+  
+          <article class="feature flex-center">
+            <i class="fa-brands fa-rocketchat feature-icon"></i>
+            <h3>support 24/7</h3>
+                    </article>
+  
+       <article class="feature flex-center">
+        <i class="fa-regular fa-credit-card feature-icon"></i>
+        <h3>Safe payment</h3>
+        </article>
+        </div>
+      </div>
+      
+     </header>
+       <!-- header end -->
+  
+   <!-- main start -->
+    <main class="flex-center">
+      <!-- sideber start -->
+      <div class="sidebar">
+        <section class="categories-section">
+            <h3 class="section-title">Categories</h3>
+            <ul class="list">
+              <li class="list-item">
+                <label for="telephone">
+                  <input type="checkbox" name="" id="telephone" value="telephone">Telephone
+                </label>
+              </li>
+
+              <li class="list-item">
+                <label for="tablets">
+                  <input type="checkbox" name="" id="tablets" value="tablets">Tablets
+                </label>
+              </li>
+
+              <li class="list-item">
+                <label for="televisions">
+                  <input type="checkbox" name="" id="televisions" value="televisions">Televisions
+                </label>
+              </li>
+
+              <li class="list-item">
+                <label for="computers">
+                  <input type="checkbox" name="" id="computers" value="computers">Computers
+                </label>
+              </li>
+
+              <li class="list-item">
+                <label for="headphones">
+                  <input type="checkbox" name="" id="headphones" value="headphones">Headphones
+                </label>
+              </li>
+            </ul>
+        </section>
+
+        <section class="price-section">
+          <h3 class="section-title">Price Range</h3>
+          <ul class="list">
+            <li class="list-item">
+              <label for="price1">
+                <input type="radio" name="price" id="price1" value="[0,20]">
+                $0-$20
+              </label>
+            </li>
+
+            <li class="list-item">
+              <label for="price2">
+                <input type="radio" name="price" id="price2" value="[21,50]">
+                $21-$50
+              </label>
+            </li>
+
+            <li class="list-item">
+              <label for="price3">
+                <input type="radio" name="price" id="price3" value="[51,100]">
+                $51-$100
+              </label>
+            </li>
+
+            <li class="list-item">
+              <label for="price4">
+                <input type="radio" name="price" id="price4" value="[0,20]">
+                $0-$20
+              </label>
+            </li>
+           
+          </ul>
+      </section>
+
+      <section class="shipping-section">
+        <h3 class="shipping-title">Shipping Options</h3>
+        <ul class="list">
+          <li class="list-item">
+            <label for="free">
+              <input type="radio" name="shipping" id="free" value="free">
+           free
+            </label>
+          </li>
+
+          <li class="list-item">
+            <label for="Paid">
+              <input type="radio" name="shipping" id="price2" value="Paid">
+             Paid
+            </label>
+          </li>
+
+         
+        </ul>
+    </section>
+      <!-- sideber end -->
+      </div>
+      <!-- main end -->
+       <!-- main content start -->
+      <div class="main-content">
+        <section class="actions flex-space-around">
+          <div class="actions-sort">sort
+          <label for="sort">Sort By:</label>
+          <select name="sort" id="sort">
+            <option value="sold">Most sold first</option>
+            <option value="rating">Most rated first</option>
+
+            <option value="arrival">Cheapest first</option>
+
+            <option value="discount">Newest first</option>
+            <option value="discount">Biggest first</option>
+          </select>
+        </div>
+          <div class="actions-search">
+            <input type="text" placeholder="search product">
+            <button class="btn"><i class="fa-sharp fa-solid fa-magnifying-glass">
+
+            </i></button>
+          </div>
+        </section>
+        <!-- product start -->
+         
+    <section class="products">
+      <!-- product1 start -->
+      <article class="product card">
+        <div class="badge">
+          <span>5 in stock</span>
+          <hr class="hr-design">
+          <span>3 sold</span>
+        </div>
+        <img src="./image/sun glass.jpg" alt="sun-glass">
+        <div class="product-body">
+          <h3 class="product-name">sun glass</h3>
+          <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+          </p>
+          <p class="product-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, Lorem ipsum dolor Lorem ipsum dolor sit amet....
+            <a href="./product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product-price">$225.99</h4>
+          <p class="product-rating">Rating:4.5/5</p>
+          <button class="btn product-btn"> Add To Cart</button>
+        </div>
+      </article>
+      <!-- product1 end -->
+       <!-- product2 start -->
+       <article class="product card">
+        <div class="badge">
+          <span>5 in stock</span>
+          <hr class="hr-design">
+          <span>9 sold</span>
+        </div>
+        <img src="./image/shoes.jpg" alt="shoes">
+        <div class="product-body">
+          <h3 class="product-name">shoes</h3>
+          <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+          </p>
+          <p class="product-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, Lorem ipsum dolor Lorem ipsum dolor sit amet....
+            <a href="./product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product-price">$525.99</h4>
+          <p class="product-rating">Rating:4.5/5</p>
+          <button class="btn product-btn"> Add To Cart</button>
+        </div>
+      </article>
+         <!-- product2 end -->
+          <!-- product3 start -->
+          <article class="product card">
+            <div class="badge">
+              <span>5 in stock</span>
+              <hr class="hr-design">
+              <span>9 sold</span>
+            </div>
+            <img src="./image/G-Shock.jpg" alt="shoes">
+            <div class="product-body">
+              <h3 class="product-name">shoes</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, Lorem ipsum dolor Lorem ipsum dolor sit amet....
+                <a href="./product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product-price">$525.99</h4>
+              <p class="product-rating">Rating:4.5/5</p>
+              <button class="btn product-btn"> Add To Cart</button>
+            </div>
+          </article>
+            <!-- product3 end -->
+             <!-- product4 start -->
+             <article class="product card">
+              <div class="badge">
+                <span>5 in stock</span>
+                <hr class="hr-design">
+                <span>9 sold</span>
+              </div>
+              <img src="./image/Tissot.jpg" alt="shoes">
+              <div class="product-body">
+                <h3 class="product-name">shoes</h3>
+                <p>
+                  <span class="dot green"></span>
+                  <span class="dot black"></span>
+                  <span class="dot red"></span>
+                </p>
+                <p class="product-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, Lorem ipsum dolor Lorem ipsum dolor sit amet....
+                  <a href="./product.html" class="learn-more">Learn More</a>
+                </p>
+                <h4 class="product-price">$525.99</h4>
+                <p class="product-rating">Rating:4.5/5</p>
+                <button class="btn product-btn"> Add To Cart</button>
+              </div>
+            </article>
+               <!-- product4 end -->
+                 <!-- product5 start -->
+               <article class="product card">
+                <div class="badge">
+                  <span>5 in stock</span>
+                  <hr class="hr-design">
+                  <span>9 sold</span>
+                </div>
+                <img src="./image/Rado.jpg" alt="shoes">
+                <div class="product-body">
+                  <h3 class="product-name">shoes</h3>
+                  <p>
+                    <span class="dot green"></span>
+                    <span class="dot black"></span>
+                    <span class="dot red"></span>
+                  </p>
+                  <p class="product-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, Lorem ipsum dolor Lorem ipsum dolor sit amet....
+                    <a href="./product.html" class="learn-more">Learn More</a>
+                  </p>
+                  <h4 class="product-price">$525.99</h4>
+                  <p class="product-rating">Rating:4.5/5</p>
+                  <button class="btn product-btn"> Add To Cart</button>
+                </div>
+              </article>
+              <!-- product5 end -->
+                 <!-- product6 start -->
+             <article class="product card">
+              <div class="badge">
+                <span>5 in stock</span>
+                <hr class="hr-design">
+                <span>9 sold</span>
+              </div>
+              <img src="./image/sunglass1.jpg" alt="shoes">
+              <div class="product-body">
+                <h3 class="product-name">shoes</h3>
+                <p>
+                  <span class="dot green"></span>
+                  <span class="dot black"></span>
+                  <span class="dot red"></span>
+                </p>
+                <p class="product-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, Lorem ipsum dolor Lorem ipsum dolor sit amet....
+                  <a href="./product.html" class="learn-more">Learn More</a>
+                </p>
+                <h4 class="product-price">$525.99</h4>
+                <p class="product-rating">Rating:4.5/5</p>
+                <button class="btn product-btn"> Add To Cart</button>
+              </div>
+            </article>
+              <!-- product6 end -->
+
+    </section>
+          <!-- product end -->
+           <!-- pagination start -->
+            <div class="pagination">
+              <button class="btn pagination-btn"><i class="fab fa-less-than"></i></button>
+              <button><i class="btn pagination-btn">1</i></button>
+              <button><i class="btn pagination-btn">2</i></button>
+              <button><i class="btn pagination-btn">3</i></button>
+              <button><i class="btn pagination-btn">4</i></button>
+              <button><i class="btn pagination-btn">5</i></button>
+              <button><i class="btn pagination-btn">6</i></button>
+              <button><i class="btn pagination-btn">7</i></button>
+              <button><i class="btn pagination-btn">8</i></button>
+              <button><i class="btn pagination-btn">9</i></button>
+              <button><i class="btn pagination-btn">10</i></button>
+              <button><i class="btn pagination-btn">...</i></button>
+              <button><i class="btn pagination-btn">50</i></button>
+              <button class="btn pagination-btn"><i class="fab fa-greater-than"></i></button>
+            </div>
+             <!-- pagination end -->
+      </div>
+    
+    </main>
+
+
+     <!-- footer start -->
+     <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter</label>
+        <input type="email" id="subscribe" placeholder="Your Email Address" name="subscribe" class="footer-input">
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      
+      <div class="footer-pr">
+        <p>&copy; copyright 2024 Arman Express All rights rserver</p>
+      </div>
+
+     </footer>
+      <!-- footer end -->
+      <script src="./index.js"></script>
+  
+  
+</body>
+</html>
